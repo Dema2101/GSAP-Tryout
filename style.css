@@ -1,0 +1,190 @@
+:root {
+--background-color: #d0f4fc;
+--primary-color: #fbffff;
+}
+
+body {
+    position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background: var(--background-color);
+
+  overflow-x: hidden;
+}
+
+
+
+h1{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 20px 0;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+
+color: transparent;
+-webkit-text-stroke: 1px #432a20;
+    /* fallback */
+
+  letter-spacing: 0.15em;              /* razmak kao na slici */
+  text-transform: uppercase;
+
+  text-align: center;
+  z-index: 999;
+}
+
+
+
+
+.visuals{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-grow: 1;
+width: 100%;
+}
+
+
+
+
+.container {
+  position: relative;
+  height: 220vh;
+  width: 100%;
+  
+}
+
+.planet1{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+ 
+}
+.planet2{
+    position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:30vw;
+  
+}
+
+.planet1 img,
+.planet2 img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.planinaDesno {
+    margin-top: 1%;
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  z-index: 1;
+}
+
+/* lijeva planina */
+.planinaLijevo{
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  z-index: 2;
+}
+
+
+
+.dunes{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 5;
+}
+
+
+
+
+
+.dunes2{
+  position: absolute;
+  bottom:  0%;
+  left:50%;
+  transform: translate(-50%,0%);
+  z-index: 6;
+  width: 100%;
+}
+
+.statue{
+  position: absolute;
+  bottom: 12%;
+  right: 29%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  width:150px;
+  height: auto;
+  opacity: 0.7;
+  
+}
+
+.artefakt1{
+  position: absolute;
+  bottom: 27%;
+  right: 13%;
+  transform: translate(50%,50%);
+  z-index: 5;
+  width:450px;
+  height: auto;
+  opacity: 1;
+
+    filter: contrast(0.95) saturate(90%) grayscale(20%);
+  opacity: 0.7;
+}
+
+
+.piramida{
+  position: absolute;
+  bottom: 0%;
+  left: 28%;
+  transform: translate(-70%,-68%);
+  z-index: 5;
+  height: 500px;
+filter: grayscale(20%);
+opacity: 0.9;
+}
+
+.piramida2{
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+  transform: translate(-70%,-58%);
+  z-index: 5;
+  height: 500px;
+filter: grayscale(20%);
+opacity: 0.9;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+.section2{
+  background-image: url("./sandBG.png");
+   background-repeat: repeat;
+  background-size: cover;
+  margin: 0;
+}

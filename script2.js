@@ -18,17 +18,18 @@ window.addEventListener("load", () => {
   });
 
   // 1) zoom u prozor
-  tl.to(".scene", {
-    scale: 4.2,
-    transformOrigin: `${originX} ${originY}`,
-    ease: "none"
-  });
+tl.to(".scene-bg", {
+  scale: 12.2,
+  transformOrigin: `${originX} ${originY}`,
+  ease: "none"
+});
+
 
   // 2) "enter" - bg nestaje, window preuzima ekran
   tl.to(".scene-bg", { opacity:0, ease: "none" }, ">");
 
   tl.to(".window-content", {
-    scale: 4.5,
+    scale: 1.5,
     ease: "none"
   }, "<");
 

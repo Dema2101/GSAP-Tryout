@@ -1,12 +1,12 @@
 * { margin: 0; padding: 0; }
 
-html, body { height: auto; }
+html, body { height: auto; background-color: #d0f4fc;}
 
 /* Intro je pin container */
 .intro{
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  overflow: clip;
 }
 
 /* Scene je “frame” unutar intro */
@@ -38,10 +38,12 @@ html, body { height: auto; }
   transform-origin: 50% 50%;
   z-index: 2;
   will-change: transform;
+  opacity: 0;
 }
 
 /* demo content */
 .page .section{
+    background-color: #d0f4fc;
   min-height: 100vh;
   display: grid;
   place-items: center;

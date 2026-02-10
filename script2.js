@@ -32,13 +32,13 @@ tl.to(".scene-bg", {
   opacity:0,
 }, ">");
 
-  tl.to(".window-content", {
+  tl.to(".zoom-content", {
     scale: 1.5,
     ease: "none"
   }, "<");
 
 
-   tl.to(".window-content", {
+   tl.to(".zoom-content", {
     scale: 1.5,
     ease: "none"
   }, "<");

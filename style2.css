@@ -29,8 +29,8 @@ html, body { height: auto; background-color: #d0f4fc;}
   z-index: 1;
 }
 
-/* window */
-.window-content{
+/* window to zoom to */
+.zoom-content{
   position: absolute;
   top: 45.5%;
   left: 50%;
@@ -75,7 +75,7 @@ div{
   top: 0%;
   left: 50%;
   width: 60vw;
-  z-index: 98;
+  z-index: 1  ;
 }
 
 .planet2{
@@ -83,7 +83,7 @@ div{
   top: 10%;
   left: 50%;
   width: 30vw;
-  z-index: 99;
+  z-index: 1;
 }
 
 .planet1 img,
@@ -91,6 +91,7 @@ div{
   height: auto;
   display: block;
   transform: translate(-50%);
+  margin-bottom: 100px;
 }
 
 
@@ -98,10 +99,20 @@ div{
   position: absolute;
   inset: 0;
   left: 20%;
+  z-index: 2;
+  
 }
-.planinaDesno img{
+.planinaDesno img,
+.planinaLijevo img{
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
+}
+
+.planinaLijevo{
+  position: absolute;
+  inset: 0;
+  top: 7%;
+  left: 0;
+  z-index: 3;
 }
